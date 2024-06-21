@@ -1,0 +1,73 @@
+body {
+  font-family: sans-serif;
+  background-color: pink;
+}
+/* img {
+  /* width: 200px; 
+  height: 200px;
+} */
+#logo {
+  float: left;
+  /* padding: 0; */
+  margin: 0;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  /* background-color: #333; */
+  float: right;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: rgb(10, 9, 9);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: #eceaea;
+}
+.gallery {
+  width: 900px;
+  display: flex;
+  overflow-x: scroll;
+}
+.gallery div {
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 20px;
+  padding: 0px 12px;
+  flex: none;
+}
+.gallery div img {
+  width: 80%;
+  height: 80%;
+}
+.gallery::-webkit-scrollbar {
+  display: none;
+}
+.gallery-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 8% auto;
+}
+#backBtn,
+#nextBtn {
+  width: 50px;
+  margin: 40px;
+}
+.gallery div img:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
